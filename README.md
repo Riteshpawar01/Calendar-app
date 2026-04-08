@@ -13,13 +13,13 @@
 - JavaScript
 - CSS (inline styling)
 
-## ▶️ Run Locally
+## ▶️live link- https://calendar-app-six-dusky.vercel.app/
 
+## screenshot:
+<img width="1123" height="902" alt="image" src="https://github.com/user-attachments/assets/f2f06d5b-eb08-4064-8519-79793e2e5442" />
+
+
+## ▶️ Run Locally
 ```bash
 npm install
 npm run dev
-
-live link- https://calendar-app-six-dusky.vercel.app/
-
-screenshot-:
-<img width="1123" height="902" alt="image" src="https://github.com/user-attachments/assets/23de5240-edd8-4da7-a2a5-7e7b0c79cf92" />
