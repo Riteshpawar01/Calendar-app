@@ -45,7 +45,7 @@ function App() {
       {/* Calendar (with shadow to LEFT/BOTTOM-LEFT) */}
       <div
         style={{
-          transformOrigin: "top center",
+          transform: "rotate(-1deg)",
           animation: "swing 3s ease-in-out infinite alternate",
           boxShadow:
             "-30px 25px 50px rgba(0,0,0,0.25), -10px 10px 20px rgba(0,0,0,0.15)",

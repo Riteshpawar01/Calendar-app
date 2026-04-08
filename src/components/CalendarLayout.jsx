@@ -9,7 +9,7 @@ export default function CalendarLayout() {
                 background: "white",
                 borderRadius: "16px",
                 overflow: "hidden",
-                boxShadow: "5 55px 100px rgba(0,0,0,0.25)",
+                boxShadow: "5px 55px 100px rgba(0,0,0,0.25)",
                 animation: "fadeIn 0.8s ease",
             }}
         >
@@ -25,32 +25,40 @@ export default function CalendarLayout() {
                     }}
                 />
 
-                {/* Blue Shape */}
+
                 <div
                     style={{
                         position: "absolute",
-                        bottom: "-30px",
-                        width: "100%",
-                        height: "140px",
-                        clipPath: "polygon(0 35%, 30% 60%, 70% 60%, 100% 35%, 100% 100%, 0% 100%)",
-                        background: "linear-gradient(to right, #1e88b6, #38bdf8)"
+                        inset: 0,
+                        background:
+                            "linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(30,136,182,0.85) 100%)",
                     }}
                 />
-
-
+                <div
+                    style={{
+                        position: "absolute",
+                        bottom: "-1px",
+                        width: "100%",
+                        height: "20px",
+                        background: "#ffffff",
+                        borderTopLeftRadius: "60% 40%",
+                        borderTopRightRadius: "60% 40%",
+                    }}
+                />
 
                 {/* Month Text */}
                 <div
                     style={{
                         position: "absolute",
-                        bottom: "20px",
-                        right: "20px",
+                        bottom: "60px",
+                        right: "25px",
                         color: "white",
                         textAlign: "right",
+                        textShadow: "0 4px 15px rgba(0,0,0,0.5)",
                     }}
                 >
-                    <div style={{ fontSize: "14px" }}>2026</div>
-                    <div style={{ fontSize: "20px", fontWeight: "bold" }}>
+                    <div style={{ fontSize: "20px" }}>2026</div>
+                    <div style={{ fontSize: "40px", fontWeight: "bold" }}>
                         APRIL
                     </div>
                 </div>
@@ -62,16 +70,15 @@ export default function CalendarLayout() {
                     style={{
                         display: "flex",
                         gap: "15px",
+                        flexWrap: "wrap",
                     }}
                 >
                     {/* Notes */}
-                    <div style={{ flex: 1 }}>
-                        <NotesPanel />
+                    <div style={{ flex: "1 1 200px" }}>                        <NotesPanel />
                     </div>
 
                     {/* Calendar */}
-                    <div style={{ flex: 2 }}>
-                        <CalendarGrid />
+                    <div style={{ flex: "2 1 300px" }}>                        <CalendarGrid />
                     </div>
                 </div>
             </div>

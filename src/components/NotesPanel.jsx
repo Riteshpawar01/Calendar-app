@@ -15,20 +15,31 @@ export default function NotesPanel() {
 
   return (
     <div>
-      <h4 style={{ marginBottom: "8px" }}>Notes</h4>
-      <textarea
-        value={note}
-        onChange={handleChange}
-        placeholder="Write monthly notes..."
-        style={{
-          width: "100%",
-          height: "120px",
-          borderRadius: "8px",
-          border: "1px solid #ccc",
-          padding: "8px",
-          resize: "none",
-        }}
-      />
+      <h4 style={{ marginBottom: "8px", fontWeight: "600" }}>
+        <textarea
+          value={note}
+          onChange={handleChange}
+          placeholder="Write monthly notes..."
+          style={{
+            width: "90%",
+            height: "100px",
+            borderRadius: "10px",
+            border: "1px solid  #e5e7eb",
+            padding: "10px 10px",
+            resize: "none",
+            outline: "none",
+            fontSize: "14px",
+            lineHeight: "24px",
+
+            backgroundImage: `
+    linear-gradient(to bottom, transparent 23px, #c4c5c7 24px)
+  `,
+            backgroundSize: "100% 24px",
+
+            boxShadow: "inset 0 2px 6px rgba(0,0,0,0.05)",
+          }}
+        />
+      </h4>
     </div>
   );
 }
